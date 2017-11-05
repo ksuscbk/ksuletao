@@ -1,4 +1,5 @@
 define(['jquery'], function ($) {
+    // 登陆
     $('form').on('submit', function () {
         var _this = $(this);
         $.ajax({
