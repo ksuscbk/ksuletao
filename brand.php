@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>乐淘 - 后台管理</title>
-    <?php include './common/head.html'; ?>
+    <?php include './common/style.html'; ?>
     
 </head>
 <body>
