@@ -28,17 +28,12 @@
                 </div>
                 <!-- 分页 -->
                 <ul class="pagination pull-right">
-                    <li><a href="#">上一页</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">下一页</a></li>
+                    
                 </ul>
             </div>
         </div>
     </div>
+    <!-- 商品列表模板 -->
     <script type='text/template' id="tpl">
         {{each rows}}
             <div class="item">
@@ -61,6 +56,18 @@
                 </div>
             </div>
         {{/each}}
+    </script>
+    <!-- 商品分页 -->
+    <script type="text/template" id="page">
+        <% if(page > 1) { %>
+        <li><a href="?page=<%= page-1 %>">上一页</a></li>
+        <% } %>
+        <% for(var i=1; i<=pageLen; i++) { %>
+        <li <% if(i == page) { %> class="active" <% } %>><a href="?page=<%= i %>"><%= i %></a></li>
+        <% } %>
+        <% if(page < pageLen) { %>
+        <li><a href="?page=<%= page-0+1 %>">下一页</a></li>
+        <% } %>
     </script>
     <?php include './common/script.html'; ?>
     <script>
