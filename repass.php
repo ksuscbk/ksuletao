@@ -51,6 +51,8 @@
     </div>
 
     <?php include './common/script.html'; ?>
-    
+    <script>
+        
+    </script>
 </body>
 </html>

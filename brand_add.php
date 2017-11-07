@@ -26,7 +26,7 @@
                         <div class="form-group">
                             <label for="" class="col-xs-4 control-label">品牌 logo</label>
                             <div class="col-xs-1 preview">
-                                <img src="/images/default.png">
+                                <img src="/public/images/default.png">
                                 <input type="file" id="upfile">
                                 <div class="cover">
                                     <i class="fa fa-upload"></i>                  
@@ -43,11 +43,11 @@
                             <label for="" class="col-xs-4 control-label">级别</label>
                             <div class="col-xs-2">
                                 <select name="" class="form-control input-sm">
-                                    <option value="">所属分类</option>
-                                    <option value="">前端开发</option>
-                                    <option value="">后端开发</option>
-                                    <option value="">数据库</option>
-                                    <option value="">视觉设计</option>
+                                    <option name="categoryName" value="">所属分类</option>
+                                    <option name="categoryName" value="">前端开发</option>
+                                    <option name="categoryName" value="">后端开发</option>
+                                    <option name="categoryName" value="">数据库</option>
+                                    <option name="categoryName" value="">视觉设计</option>
                                 </select>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-xs-8">
-                                <a href="javascript:;" class="btn btn-success btn-sm pull-right">保存</a>
+                                <input type="submit" value="保存" class="btn btn-success btn-sm pull-right">
                             </div>                          
                         </div>
                     </form>
@@ -74,5 +74,8 @@
     </div>
 
     <?php include './common/script.html'; ?>
+    <script>
+        require(['src/brandadd']);
+    </script>
 </body>
 </html>

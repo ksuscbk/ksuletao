@@ -65,6 +65,8 @@
         </div>
     </div>
     <?php include './common/script.html'; ?>
-    
+    <script>
+        require(['src/brand']);
+    </script>
 </body>
 </html>
